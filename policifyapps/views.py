@@ -39,9 +39,9 @@ class HomePageView(TemplateView):
 class FeedbackPageView(TemplateView):
     template_name = "feedback.html"
 
-@login_required(login_url="/login") 
-class DashboardPageView(TemplateView):
-    template_name = "dashboard/dashboard.html"
+# @login_required(login_url="/login") 
+# class DashboardPageView(TemplateView):
+#     template_name = "dashboard/dashboard.html"
     
 @login_required(login_url="/login")   
 class PrivacyDashboardPageView(TemplateView):
@@ -69,7 +69,10 @@ class TCPreviewPageView(TemplateView):
     template_name = "tcp.html"
     
 class PPPreviewPageView(TemplateView):
-    template_name = "ppp.html"   
+    template_name = "ppp.html"  
+     
+class AboutPageView(TemplateView):
+    template_name = "about.html"   
 
    
 @login_required(login_url="/login")
@@ -110,15 +113,8 @@ def all_post(request):
         "posts":posts,
         "terms":terms,
      }
-     if request.method == "POST":
-          post_id = request.POST.get("post-id")
-          edit_id = request.POST.get("edit-id")
-          if post_id:
-               post = PolicyPost.objects.filter(id=post_id).first()
-               if post and post.author == request.user:
-                    post.delete()
-          elif edit_id:
-               return redirect(f'/edit-post/{edit_id}')
+     print(posts)
+     print(terms)
                
      return render(request,"dashboard/dashboard.html",context)
 
