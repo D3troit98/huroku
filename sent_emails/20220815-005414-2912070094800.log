@@ -1,0 +1,25 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Subject: Password reset on 127.0.0.1:8000
+From: webmaster@localhost
+To: duruakuebuka@gmail.com
+Date: Sun, 14 Aug 2022 23:54:14 -0000
+Message-ID: <166052125489.14436.15546449364999434341@DESKTOP-86S2OTJ>
+
+
+You're receiving this email because you requested a password reset for your user account at 127.0.0.1:8000.
+
+Please go to the following page and choose a new password:
+
+http://127.0.0.1:8000/reset/MQ/ba6aie-cd83eae49387190f0b95435ae149f89d/
+
+Your username, in case you’ve forgotten: duruakuebuka@gmail.com
+
+Thanks for using our site!
+
+The 127.0.0.1:8000 team
+
+
+
+-------------------------------------------------------------------------------
