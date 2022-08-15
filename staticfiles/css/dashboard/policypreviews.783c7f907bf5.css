@@ -164,13 +164,13 @@ p {
     right: 10px;
     top: 30%;
     
-    display: none;
+    display: flex;
     flex-direction: column;
     box-shadow: 5px 5px 5px rgba(161, 151, 151, 0.1), -5px -5px 5px rgba(161, 151, 151, 0.1);
     background-color: #fff;
    font-size: 0.85rem;
-    height: 160px;
-    width: 200px;
+    height: 100px;
+    width: 220px;
     background-color: #f9f9f9;
     z-index: 999;
     margin-left: 0;
@@ -181,9 +181,27 @@ p {
 }
 .formats > * {
     margin-top: 1.4rem;
-}
- 
 
+ 
+    right: 10%;
+    top: 30%;
+    
+    display: none;
+    
+    box-shadow: 5px 5px 5px rgba(161, 151, 151, 0.1), -5px -5px 5px rgba(161, 151, 151, 0.1);
+    background-color: rgb(252, 246, 247);
+   font-size: 0.85rem;
+    height: 160px;
+    width: 200px;
+    line-height: 3;
+    z-index: 999;
+    margin-left: 0;
+    color: #49414f;
+    padding-left: 1rem;
+
+    animation: fadeout .5s;
+    
+}
 .formats {
     display: flex;
     flex-direction: column;
@@ -205,7 +223,6 @@ p {
     margin-top: 1rem;
     padding-bottom: 0rem;
  }
-
 .close-pop {
     margin-top: 5rem;
     position: absolute;
