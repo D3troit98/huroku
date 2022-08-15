@@ -102,7 +102,7 @@ WSGI_APPLICATION = 'policifyProject.wsgi.application'
 #     }
 # }
 
-#Remote database
+# Remote database
 DATABASES = {
     'default': {
         'ENGINE':'django.db.backends.postgresql_psycopg2',
