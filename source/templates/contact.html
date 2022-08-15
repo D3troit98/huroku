@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block extrahead %}
+<link rel="stylesheet" href="{% static 'css/contact.css' %}">
+
+{% endblock extrahead %}
+    
+{% block title %}product{% endblock title %}
+
+
+    {% block content %}
+    <div class="main-cont">
+        <div class="header">
+            <h1 style="text-align: center;color: #251B2C;">CONTACT US</h1>
+            <p style="text-align: center;color: #49414F;">We are here to listen to your complaints and we give <br> response immediately</p>
+        </div>
+        <div class="cont">
+            <div class="justify"><img src="{% static 'images/contact/contact.png' %}" alt="A lady contacting via social media apps" class="img"></div>
+            <div class="box">
+                <form action="">
+                    <label for="name" class="firstn">Name</label> <br>
+                    <input type="text" placeholder="Sarah Connor"> <br>
+                    <label for="email">E-mail</label> <br>
+                    <input type="email" name="" required id="" placeholder="yinusaomobolanle@gmail.com"> <br>
+                    <label for="txtarea">Leave a message</label> <br>
+                    <textarea name="" cols="10" rows="5" id="message" placeholder="Type your message"></textarea> <br>
+                    <button class="btn">Send message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}

@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block extrahead %}
+<link rel="stylesheet" href="{% static 'css/products.css' %}">
+
+{% endblock extrahead %}
+    
+{% block title %}product{% endblock title %}
+
+{% block content %}
+    <!--<main>-->
+        <div class="main">
+        <div id="top-body">
+            <h3>Start your journey to policy solutions</h3>
+            <p>We are committed to making it as easy as possible to generate Privacy Policies and Terms and Conditions that most website owners, small business owners & developers would require to build their businesses.</p>
+        </div>
+        <div class="mid-body">
+            <div class="terms-main">
+                <div class="middle">
+                    <img src="{% static 'images/product/bro.svg' %}" alt="">
+                    <h4>Terms and Conditions</h4>
+                    <p>Generate terms and conditions &#40;terms of service&#41; for your website in minutes.
+                    </p>
+                </div>
+                <div class="button">
+                    <button class="purple-btn">Generate</button>
+                    <button class="white-btn">Read more</button>
+                </div>
+            </div>
+            <div class="terms-main">
+                <div class="middle">
+                    <img src="{% static 'images/product/amico.svg' %}" alt="">
+                    <h4>Privacy Policy</h4>
+                    <p>Generate privacy policy for your website  in minutes. Optimized for e-commerce, marketplace, SaaS, apps and more
+                    </p>
+                </div>
+                <div class="button">
+                    <button class="purple-btn">Generate</button>
+                    <button class="white-btn">Read more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--</main>-->
+{% endblock content %}
+
+
+    
